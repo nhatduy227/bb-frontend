@@ -1,0 +1,68 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 92vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    background-color: white;
+    padding: 8vh 20vw;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.form-container p {
+    color: black;
+    text-align: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-btn {
+    text-align: left;
+    padding: 0.75rem 0;
+    background: none;
+    color: #0D9DDB;
+    text-decoration: underline;
+    border: none;
+}
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+}
+
+input {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+button {
+    border: none;
+    background-color: #0D9DDB;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+}

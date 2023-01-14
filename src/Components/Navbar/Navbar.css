@@ -1,0 +1,11 @@
+.nav {
+    background-color: black;
+    opacity: 40%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+p {
+    padding-right: 4vw;
+    color: white;
+}

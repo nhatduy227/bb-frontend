@@ -1,0 +1,11 @@
+h1 {
+    margin-left: 5vw;
+    color: white;
+}
+
+.header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
