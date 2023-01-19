@@ -1,0 +1,8 @@
+.landingPageContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 80vh;
+    height:75vh;
+    line-height:75vh;
+}
