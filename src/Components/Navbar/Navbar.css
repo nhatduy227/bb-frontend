@@ -5,7 +5,8 @@
     justify-content: flex-end;
 }
 
-p {
+.link {
+    text-decoration: inherit;
     padding-right: 4vw;
     color: white;
 }
