@@ -4,7 +4,7 @@ import Header from '../../Components/Header/Header'
 import './Create.css'
 
 export default function Create() {
-  const [formType, setFormType] = React.useState('LE')
+  const [formType, setFormType] = useState('LE')
   return (
     <div>
       <Header />
@@ -28,7 +28,7 @@ export default function Create() {
                   <span>
                     <div className="row">
                       <div className="col-form-input">
-                        <select class="select-form" onChange={e => setFormType(e.target.value)}>
+                        <select class="select-form-secondary" onChange={e => setFormType(e.target.value)}>
                           <option value="LE">LE vLEI</option>
                           <option value="OOR">OOR vLEI</option>
                           <option value="ECR">ECR vLEI</option>
