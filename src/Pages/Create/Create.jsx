@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../../Components/Navbar/Navbar'
 import Header from '../../Components/Header/Header'
 import './Create.css'
 
 export default function Create() {
+  const [formType, setFormType] = React.useState('LE')
   return (
     <div>
       <Header />
@@ -22,7 +23,24 @@ export default function Create() {
                     </div>
                     <div>To request a single new vLEI, click the Checkout button on the right side of the page. On successful completion you will receive a tracking number.</div>
                 </div>
+
+                <div className="form-group">
+                  <span>
+                    <div className="row">
+                      <div className="col-form-input">
+                        <select class="select-form" onChange={e => setFormType(e.target.value)}>
+                          <option value="LE">LE vLEI</option>
+                          <option value="OOR">OOR vLEI</option>
+                          <option value="ECR">ECR vLEI</option>
+                        </select>
+                      </div>
+                    </div>
+                  </span>
+                </div>
+
                 <div class="row">
+
+                  {formType === "LE" ?
                   <div class="col-create">
                     <div class="form-group">
                       <span>
@@ -40,6 +58,101 @@ export default function Create() {
                       </span>
                     </div>
                   </div>
+                  : 
+                  formType === "OOR" ?
+                  <div class="col-create">
+                    <div class="form-group">
+                      <span>
+                        <div class="row">
+                          <div class="col-form-label">
+                            <label>* LEI Identifier</label>
+                          </div>
+                          <div class="col-form-input">
+                            <select class="select-form">
+                              <option value>Select LEI Identifier</option>
+                              <option value="test">506700GE1G29325QX363</option>
+                            </select>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <span>
+                        <div class="row">
+                          <div class="col-form-label">
+                            <label>* Legal Name</label>
+                          </div>
+                          <div class="col-form-input">
+                            <input placeholder="Legal Name" class="select-form">
+                            </input>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <span>
+                        <div class="row">
+                          <div class="col-form-label">
+                            <label>* Official Organiziation Role</label>
+                          </div>
+                          <div class="col-form-input">
+                            <select class="select-form">
+                              <option value>Select Official Organiziation Role</option>
+                              <option value="CEO">Chief Executive Officer</option>
+                            </select>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+                  : 
+                  formType === "ECR" ?
+                  <div class="col-create">
+                    <div class="form-group">
+                      <span>
+                        <div class="row">
+                          <div class="col-form-label">
+                            <label>* LEI Identifier</label>
+                          </div>
+                          <div class="col-form-input">
+                            <select class="select-form">
+                              <option value>Select LEI Identifier</option>
+                              <option value="test">506700GE1G29325QX363</option>
+                            </select>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <span>
+                        <div class="row">
+                          <div class="col-form-label">
+                            <label>* Legal Name</label>
+                          </div>
+                          <div class="col-form-input">
+                            <input placeholder="Legal Name" class="select-form"></input>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+
+                    <div class="form-group">
+                      <span>
+                        <div class="row">
+                          <div class="col-form-label">
+                            <label>* Engagement Context Role</label>
+                          </div>
+                          <div class="col-form-input">
+                            <input placeholder="Engagement Context Role" class="select-form"></input>
+                          </div>
+                        </div>
+                      </span>
+                    </div>
+                  </div> : null}
+
                   <div class="col-checkout">
                     <div>
                       <div class="form-group form-check">
