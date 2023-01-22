@@ -1,0 +1,164 @@
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 40vh;
+}
+
+.title {
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    background-color: white;
+    padding: 2vh 20vw;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: x-large;
+}
+
+.form-container p {
+    color: black;
+    text-align: center;
+}
+
+a.no-hover {
+    pointer-events: none;
+}
+
+.btn-group {
+    position: relative;
+    display: inline-flex;
+    vertical-align: middle;
+}
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #0d9ddb;
+    border-color: #0d9ddb;
+}
+
+.btn-green {
+    color: white;
+    border-color: #4daa50;
+    background-color: #4daa50;
+}
+
+.btn-default {
+    color: #3c3c3c;
+    background-color: #fff;
+    border-color: #d4d4d4;
+}
+/* 
+.login-form {
+    display: flex;
+    flex-direction: column;
+} */
+
+label {
+    text-align: left;
+    padding: 0.25rem 0;
+}
+
+input {
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+button {
+    border: none;
+    background-color: #0D9DDB;
+    padding: 20px;
+    cursor: pointer;
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+}
+
+.col-create {
+    flex: 0 0 66.6666666667%;
+    max-width: 66.6666666667%;
+}
+
+.col-checkout {
+    flex: 0 0 33.3333333333%;
+    max-width: 33.3333333333%
+}
+
+.form-group{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.form-check {
+    position: relative;
+    display: block;
+    padding-left: 1.25rem;
+}
+
+.form-check-input {
+    position: absolute;
+    margin-top: 0.3rem;
+    margin-left: -1.25rem;
+}
+
+.form-check-label {
+    margin-bottom: 0;
+}
+
+.col-form-label {
+    padding-top: calc(0.375rem + 1px);
+    padding-bottom: calc(0.375rem + 1px);
+    margin-bottom: 0;
+    font-size: inherit;
+    line-height: 1.8;
+}
+
+.col-form-input {
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.select-form {
+    display: block;
+    width: 100%;
+    height: calc(1.8em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.8;
+    color: #525252;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #d4d4d4;
+    border-radius: 0;
+}
