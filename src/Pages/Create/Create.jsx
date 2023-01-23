@@ -24,11 +24,11 @@ export default function Create() {
                     <div>To request a single new vLEI, click the Checkout button on the right side of the page. On successful completion you will receive a tracking number.</div>
                 </div>
 
-                <div className="form-group">
+                <div className="form-group select-dropdown">
                   <span>
                     <div className="row">
                       <div className="col-form-input">
-                        <select class="select-form-secondary" onChange={e => setFormType(e.target.value)}>
+                        <select class="select-form" onChange={e => setFormType(e.target.value)}>
                           <option value="LE">LE vLEI</option>
                           <option value="OOR">OOR vLEI</option>
                           <option value="ECR">ECR vLEI</option>
@@ -49,7 +49,7 @@ export default function Create() {
                             <label>* LEI Identifier</label>
                           </div>
                           <div class="col-form-input">
-                            <select class="select-form">
+                            <select class="select-form select-form-sizing">
                               <option value>Select LEI Identifier</option>
                               <option value="test">506700GE1G29325QX363</option>
                             </select>
@@ -68,7 +68,7 @@ export default function Create() {
                             <label>* LEI Identifier</label>
                           </div>
                           <div class="col-form-input">
-                            <select class="select-form">
+                            <select class="select-form select-form-sizing">
                               <option value>Select LEI Identifier</option>
                               <option value="test">506700GE1G29325QX363</option>
                             </select>
@@ -84,7 +84,7 @@ export default function Create() {
                             <label>* Legal Name</label>
                           </div>
                           <div class="col-form-input">
-                            <input placeholder="Legal Name" class="select-form">
+                            <input placeholder="Legal Name" class="select-form select-form-sizing">
                             </input>
                           </div>
                         </div>
@@ -98,7 +98,7 @@ export default function Create() {
                             <label>* Official Organiziation Role</label>
                           </div>
                           <div class="col-form-input">
-                            <select class="select-form">
+                            <select class="select-form select-form-sizing">
                               <option value>Select Official Organiziation Role</option>
                               <option value="CEO">Chief Executive Officer</option>
                             </select>
@@ -117,7 +117,7 @@ export default function Create() {
                             <label>* LEI Identifier</label>
                           </div>
                           <div class="col-form-input">
-                            <select class="select-form">
+                            <select class="select-form select-form-sizing">
                               <option value>Select LEI Identifier</option>
                               <option value="test">506700GE1G29325QX363</option>
                             </select>
@@ -133,7 +133,7 @@ export default function Create() {
                             <label>* Legal Name</label>
                           </div>
                           <div class="col-form-input">
-                            <input placeholder="Legal Name" class="select-form"></input>
+                            <input placeholder="Legal Name" class="select-form select-form-sizing"></input>
                           </div>
                         </div>
                       </span>
@@ -146,7 +146,7 @@ export default function Create() {
                             <label>* Engagement Context Role</label>
                           </div>
                           <div class="col-form-input">
-                            <input placeholder="Engagement Context Role" class="select-form"></input>
+                            <input placeholder="Engagement Context Role" class="select-form select-form-sizing"></input>
                           </div>
                         </div>
                       </span>
@@ -155,11 +155,11 @@ export default function Create() {
 
                   <div class="col-checkout">
                     <div>
-                      <div class="form-group form-check">
-                        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+                      <div class="form-group form-check service-style">
+                        <input type="checkbox" class="form-check-input" id="example1" />
                         <label class="form-check-label">
                           <small>
-                            I have read and agree to the <a href="https://lei.bloomberg.com/docs/service-customer-agreement" target="_blank">Service Customer Agreement.</a>
+                            I have read and agree to the <a href="https://lei.bloomberg.com/docs/service-customer-agreement" target="_blank">Service Customer Agreement. </a>
                             Further, I understand that I may be required to provide certified documentation confirming my authorization on behalf of the legal entity if requested by Bloomberg Finance LP.
                           </small>
                         </label>
