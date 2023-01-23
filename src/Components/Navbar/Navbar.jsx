@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     // TODO: replace links to to links to Create/View components once created
     <nav className='nav'>
-      <Link to="/" className='link'>Create</Link> 
+      <Link to="/create" className='link'>Create</Link> 
       <Link to="/home" className='link'>View</Link>
     </nav>
   )
